@@ -83,7 +83,8 @@ export default function Landing() {
 							<span className="hidden lg:block">
 								{" "}
 								Jelajahi direktori lengkap kami, baca ulasan jujur dari mahasiswa lain, dan dapatkan promo eksklusif.
-								Dari tempat kopi buat nugas sampai jasa print terdekat, semua ada di Katalo.
+								Dari tempat kopi buat nugas sampai jasa print terdekat, semua ada di{" "}
+								<span className="font-bold text-ipb_blue">Katalo</span>.
 							</span>
 						</p>
 
