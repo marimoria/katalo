@@ -1,15 +1,78 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--font-family-helvetica: Helvetica, Arial, sans-serif;
+	--font-family-helvetica-rounded: "Helvetica Rounded", Helvetica, Arial, sans-serif;
+	--font-family-helvetica-compressed: "Helvetica Compressed", Helvetica, Arial, sans-serif;
+
+	--color-ipb_blue: #263c92;
+	--color-dark_blue: #344eb2;
+	--color-light_sky: #eaf4fd;
+	--color-med_sky: #aaebff;
+	--color-soft_blue: #b4dbff;
+	--color-vivid_blue: #89e3ff;
+
+	--color-gray_green: #4d8965;
+	--color-grass_green: #6db84f;
+	--color-lime_green: #8dc945;
+	--color-yellow_green: #adde47;
+	--color-neon-lime: #ccf56b;
+
+	--color-cherry_red: #ff5757;
 }
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
+@font-face {
+	font-family: "Helvetica";
+	src: url("/fonts/Helvetica.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+@font-face {
+	font-family: "Helvetica";
+	src: url("/fonts/helvetica-light-587ebe5a59211.ttf") format("truetype");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Helvetica";
+	src: url("/fonts/Helvetica-Oblique.ttf") format("truetype");
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Helvetica";
+	src: url("/fonts/Helvetica-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Helvetica";
+	src: url("/fonts/Helvetica-BoldOblique.ttf") format("truetype");
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Helvetica Rounded";
+	src: url("/fonts/helvetica-rounded-bold-5871d05ead8de.otf") format("opentype");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Helvetica Compressed";
+	src: url("/fonts/helvetica-compressed-5871d14b6903a.otf") format("opentype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
 }
