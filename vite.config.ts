@@ -4,5 +4,13 @@ import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
-  plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
+	optimizeDeps: {
+		include: ["react", "react-dom"]
+	},
+	plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
+	build: {
+		commonjsOptions: {
+			transformMixedEsModules: true
+		}
+	}
 });
